@@ -1,0 +1,26 @@
+
+<div class="container col-md-12" >
+    <br>
+    <h1 style="text-align: center;">SAP SERVICES</h1>
+<br>
+    
+    <div class="row row-cols-1 row-cols-md-2" style="text-align: center;justify-content:center;">
+        
+        <div *ngFor='let item of serviceData' class="card respnsive" [style.border-color]="getColor()"
+        style="width: 20rem; border-radius:20px;padding-top:10px;margin-left:18px;margin-bottom:10px;border-width: medium;">
+            <div class="col align-self-center">
+                <img class="card-img-top embed-responsive-item" src="{{item.thumbnail}}" alt="Card image cap">
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title" style="font-size:medium;text-align: center;font-weight: bold;" >{{item.heading}}</h3>
+                <p class="card-text" style="font-weight: 400;color:#444;font-size: 16px;">{{item.content}}</p>   
+             </div>
+             <span style="text-align:center;padding-bottom:20px;">
+                <a href="#" >Read More ></a>
+            </span> 
+        </div>
+    
+    </div>
+</div>
+
